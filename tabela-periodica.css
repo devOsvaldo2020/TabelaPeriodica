@@ -1,0 +1,233 @@
+﻿body{
+	font-family: Arial;
+	margin:0 auto;
+	text-align: center;
+}
+
+.tabela-periodica{
+	width: 97%;
+	display: flex;
+	flex-direction: column;
+	margin:20px auto;
+}
+
+.tabela-periodica .grupo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabela-periodica .grupo span{
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.tabela-periodica .grupo span strong{
+	font-size: 12px;
+}
+
+.tabela-periodica .row{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.tabela-periodica .row div{
+	flex-basis: 5.103%;
+	border: 1px solid #333;
+	border-collapse: collapse;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: space-between;
+	flex-direction: column;
+	height: 70px;
+	margin: 2px;
+	position: relative;
+	background: #ecff91;
+	transition: all .2s ease;
+	cursor: pointer;
+}
+
+.tabela-periodica .row div:hover{
+	transform: scale(1.5);
+	z-index: 2;
+	position: relative;
+}
+
+.tabela-periodica .row .cell:hover{
+	cursor: default !important;
+	transform: none;
+}
+
+/* LINHA UM */
+
+.tabela-periodica .linha-um div:nth-child(1){
+	background: #ab91ff;
+}
+
+.tabela-periodica .linha-um div:nth-child(3){
+	background: #90dffe;
+}
+
+/* LINHA DOIS */
+
+.tabela-periodica .linha-dois div:nth-child(1){
+	background: #fec590;
+}
+
+.tabela-periodica .linha-dois div:nth-child(2){
+	background: #ffdf92;
+}
+
+.tabela-periodica .linha-dois div:nth-child(4){
+	background: #91ff9e;
+}
+
+.tabela-periodica .linha-dois div:nth-child(5),
+.tabela-periodica .linha-dois div:nth-child(6),
+.tabela-periodica .linha-dois div:nth-child(7){
+	background: #ab91ff;
+}
+
+.tabela-periodica .linha-dois div:nth-child(8){
+	background: #f992ff;
+}
+
+.tabela-periodica .linha-dois div:nth-child(9){
+	background:#90dffe;
+}
+
+/* LINHA TRES */
+.tabela-periodica .linha-tres div:nth-child(1){
+	background: #fec590;
+}
+
+.tabela-periodica .linha-tres div:nth-child(2){
+	background: #ffdf92;
+}
+
+.tabela-periodica .linha-tres div:nth-child(5){
+	background: #91ff9e;
+}
+
+.tabela-periodica .linha-tres div:nth-child(6),
+.tabela-periodica .linha-tres div:nth-child(7){
+	background: #ab91ff;
+}
+
+.tabela-periodica .linha-tres div:nth-child(8){
+	background: #f992ff;
+}
+
+.tabela-periodica .linha-tres div:nth-child(9){
+	background:#90dffe;
+}
+
+/* LINHA QUATRO - CINCO - SEIS - SETE */
+.tabela-periodica .linha-quatro div:nth-child(1),
+.tabela-periodica .linha-cinco div:nth-child(1),
+.tabela-periodica .linha-seis div:nth-child(1),
+.tabela-periodica .linha-sete div:nth-child(1){
+	background: #fec590;
+}
+
+.tabela-periodica .linha-quatro div:nth-child(2),
+.tabela-periodica .linha-cinco div:nth-child(2),
+.tabela-periodica .linha-seis div:nth-child(2),
+.tabela-periodica .linha-sete div:nth-child(2){
+	background: #ffdf92;
+}
+
+.tabela-periodica .linha-quatro div:nth-child(13){
+	background: #fef991;
+}
+
+.tabela-periodica .linha-quatro div:nth-child(14),
+.tabela-periodica .linha-quatro div:nth-child(15){
+	background: #91ff9e;
+}
+
+.tabela-periodica .linha-quatro div:nth-child(16){
+	background: #ab91ff;
+}
+
+.tabela-periodica .linha-quatro div:nth-child(17),
+.tabela-periodica .linha-cinco div:nth-child(17),
+.tabela-periodica .linha-seis div:nth-child(17){
+	background: #f992ff;
+}
+
+.tabela-periodica .linha-cinco div:nth-child(15),
+.tabela-periodica .linha-cinco div:nth-child(16),
+.tabela-periodica .linha-seis div:nth-child(16){
+	background: #91ff9e;
+}
+
+
+
+.tabela-periodica .linha-sete div:nth-child(13),
+.tabela-periodica .linha-sete div:nth-child(14),
+.tabela-periodica .linha-sete div:nth-child(15),
+.tabela-periodica .linha-sete div:nth-child(16),
+.tabela-periodica .linha-sete div:nth-child(17),
+.tabela-periodica .linha-sete div:nth-child(18){
+	background: #ccc !important;
+}
+
+.tabela-periodica .row div:last-child{
+	background: #90dffe;
+}
+
+.tabela-periodica .row .cell{
+	flex:1;
+	border: none;
+	background: none;
+}
+
+.tabela-periodica .row div span:nth-child(1){
+	align-self: flex-end;
+	position: absolute;
+	top: 1px;
+    right: 2px;
+    font-size: 11px;
+}
+
+.tabela-periodica .row div span:nth-child(2){
+	font-size:40px;
+}
+
+.tabela-periodica .row div span:nth-child(3){
+	font-size: 12px;
+}
+
+.tabela-periodica .main-row{
+	margin-top: 20px;
+}
+
+.tabela-periodica .main-row .linha-oito .cell,
+.tabela-periodica .main-row .linha-nove .cell{
+	background: none;
+}
+
+.tabela-periodica .main-row .linha-oito div{
+	background: #d1ff92;
+}
+
+.tabela-periodica .main-row .linha-nove div{
+	background: #b7ff91;
+}
+
+.tabela-periodica .main-row .notas{
+	display: flex;
+	flex-direction: column;
+}
+
+@media (max-width: 768px){
+	.tabela-periodica .row{
+		flex-wrap: wrap;
+	}
+}
+
